@@ -34,6 +34,8 @@
 		28D91C062A03F0C8002D0CFA /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C052A03F0C8002D0CFA /* SearchViewController.storyboard */; };
 		28D91C092A03F171002D0CFA /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C072A03F171002D0CFA /* TitleTableViewCell.swift */; };
 		28D91C0A2A03F171002D0CFA /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C082A03F171002D0CFA /* TitleTableViewCell.xib */; };
+		28D91C0E2A03F8C0002D0CFA /* ItemPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C0D2A03F8C0002D0CFA /* ItemPreviewViewController.swift */; };
+		28D91C102A03F8D4002D0CFA /* ItemPreviewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C0F2A03F8D4002D0CFA /* ItemPreviewViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		28D91C052A03F0C8002D0CFA /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
 		28D91C072A03F171002D0CFA /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		28D91C082A03F171002D0CFA /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		28D91C0D2A03F8C0002D0CFA /* ItemPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPreviewViewController.swift; sourceTree = "<group>"; };
+		28D91C0F2A03F8D4002D0CFA /* ItemPreviewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemPreviewViewController.storyboard; sourceTree = "<group>"; };
 		5137B55657B680BF53A42059 /* Pods-SnareHelpDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.debug.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.debug.xcconfig"; sourceTree = "<group>"; };
 		F0FE271FCC15682B3812C6BD /* Pods_SnareHelpDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnareHelpDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC49892E0AF110D4BFBD50AA /* Pods-SnareHelpDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.release.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,11 +144,8 @@
 		28C1313F2A0386BC00623B49 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				28C1312D2A03862B00623B49 /* HomeViewController.swift */,
-				28C1312F2A03862B00623B49 /* HomeViewController.storyboard */,
-				28C131422A03879600623B49 /* MainTabBarViewController.swift */,
-				28D91C032A03F0B0002D0CFA /* SearchViewController.swift */,
-				28D91C052A03F0C8002D0CFA /* SearchViewController.storyboard */,
+				28D91C0C2A03F87E002D0CFA /* Core */,
+				28D91C0B2A03F86F002D0CFA /* General */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +175,27 @@
 				28B9601F2A03975C0026BF05 /* StoryboardSegues.swift */,
 			);
 			path = CodeGenerated;
+			sourceTree = "<group>";
+		};
+		28D91C0B2A03F86F002D0CFA /* General */ = {
+			isa = PBXGroup;
+			children = (
+				28D91C0D2A03F8C0002D0CFA /* ItemPreviewViewController.swift */,
+				28D91C0F2A03F8D4002D0CFA /* ItemPreviewViewController.storyboard */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		28D91C0C2A03F87E002D0CFA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				28C1312D2A03862B00623B49 /* HomeViewController.swift */,
+				28C1312F2A03862B00623B49 /* HomeViewController.storyboard */,
+				28C131422A03879600623B49 /* MainTabBarViewController.swift */,
+				28D91C032A03F0B0002D0CFA /* SearchViewController.swift */,
+				28D91C052A03F0C8002D0CFA /* SearchViewController.storyboard */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		72FC2373A58933866E270886 /* Frameworks */ = {
@@ -270,6 +292,7 @@
 				28D91BFE2A03E5FB002D0CFA /* TitleCollectionViewCell.xib in Resources */,
 				28C131362A03862C00623B49 /* LaunchScreen.storyboard in Resources */,
 				28C131332A03862C00623B49 /* Assets.xcassets in Resources */,
+				28D91C102A03F8D4002D0CFA /* ItemPreviewViewController.storyboard in Resources */,
 				28D91BFA2A03E5A4002D0CFA /* CollectionViewTableViewCell.xib in Resources */,
 				28D91C0A2A03F171002D0CFA /* TitleTableViewCell.xib in Resources */,
 				28C131312A03862B00623B49 /* HomeViewController.storyboard in Resources */,
@@ -340,6 +363,7 @@
 				28D91BFD2A03E5FB002D0CFA /* TitleCollectionViewCell.swift in Sources */,
 				28D91C022A03E890002D0CFA /* APICaller.swift in Sources */,
 				28C1312C2A03862B00623B49 /* SceneDelegate.swift in Sources */,
+				28D91C0E2A03F8C0002D0CFA /* ItemPreviewViewController.swift in Sources */,
 				28B960222A0397640026BF05 /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

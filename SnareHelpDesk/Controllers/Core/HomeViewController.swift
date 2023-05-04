@@ -51,6 +51,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
 
+        cell.delegate = self
 
         switch indexPath.section {
         case Sections.Yamaha.rawValue:
@@ -118,4 +119,15 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return sectionTitles[section]
     }
 
+}
+
+
+extension HomeViewController: CollectionViewTableViewCellDelegate {
+    func collectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, model: Item) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = StoryboardScene.ItemPreviewViewController.initialScene.instantiate()
+            vc.model = model
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }

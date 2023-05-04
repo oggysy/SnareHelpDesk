@@ -56,6 +56,12 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = StoryboardScene.ItemPreviewViewController.initialScene.instantiate()
+            let model = self?.items[indexPath.row].Item
+            vc.model = model
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 
