@@ -13,9 +13,14 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let vc1 = StoryboardScene.HomeViewController.initialScene.instantiate()
+        let vc1 = UINavigationController(rootViewController: StoryboardScene.HomeViewController.initialScene.instantiate())
+        let vc2 = UINavigationController(rootViewController: StoryboardScene.SearchViewController.initialScene.instantiate())
+
         vc1.tabBarItem.image = UIImage(systemName: "house")
+        vc2.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+
         vc1.title = "Home"
+        vc2.title = "Search"
 
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.backgroundColor = .systemCyan
@@ -36,7 +41,8 @@ class MainTabBarViewController: UITabBarController {
         tabBarAppearance.compactInlineLayoutAppearance = itemAppearance
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
-        setViewControllers([vc1], animated: true)
+
+        setViewControllers([vc1,vc2], animated: true)
     }
 
 
