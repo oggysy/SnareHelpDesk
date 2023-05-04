@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19C321E08DF312F1CD041BA1 /* Pods_SnareHelpDesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FE271FCC15682B3812C6BD /* Pods_SnareHelpDesk.framework */; };
+		28B960202A03975C0026BF05 /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B9601F2A03975C0026BF05 /* StoryboardSegues.swift */; };
+		28B960222A0397640026BF05 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B960212A0397640026BF05 /* StoryboardScenes.swift */; };
+		28B960242A0397670026BF05 /* AssetsImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B960232A0397670026BF05 /* AssetsImages.swift */; };
 		28C1312A2A03862B00623B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C131292A03862B00623B49 /* AppDelegate.swift */; };
 		28C1312C2A03862B00623B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1312B2A03862B00623B49 /* SceneDelegate.swift */; };
-		28C1312E2A03862B00623B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1312D2A03862B00623B49 /* ViewController.swift */; };
-		28C131312A03862B00623B49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C1312F2A03862B00623B49 /* Main.storyboard */; };
+		28C1312E2A03862B00623B49 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1312D2A03862B00623B49 /* HomeViewController.swift */; };
+		28C131312A03862B00623B49 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C1312F2A03862B00623B49 /* HomeViewController.storyboard */; };
 		28C131332A03862C00623B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C131322A03862C00623B49 /* Assets.xcassets */; };
 		28C131362A03862C00623B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C131342A03862C00623B49 /* LaunchScreen.storyboard */; };
+		28C131432A03879600623B49 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C131422A03879600623B49 /* MainTabBarViewController.swift */; };
+		28D91BE52A03A074002D0CFA /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28D91BE42A03A074002D0CFA /* OpenAISwift */; };
+		28D91BE82A03A0A0002D0CFA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 28D91BE72A03A0A0002D0CFA /* Realm */; };
+		28D91BEA2A03A0A0002D0CFA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28D91BE92A03A0A0002D0CFA /* RealmSwift */; };
+		28D91BED2A03A0C5002D0CFA /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28D91BEC2A03A0C5002D0CFA /* MessageKit */; };
+		28D91BF02A03A0DB002D0CFA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 28D91BEF2A03A0DB002D0CFA /* SDWebImage */; };
+		28D91BF22A03A0DB002D0CFA /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 28D91BF12A03A0DB002D0CFA /* SDWebImageMapKit */; };
+		28D91BF92A03E5A4002D0CFA /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91BF72A03E5A4002D0CFA /* CollectionViewTableViewCell.swift */; };
+		28D91BFA2A03E5A4002D0CFA /* CollectionViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D91BF82A03E5A4002D0CFA /* CollectionViewTableViewCell.xib */; };
+		28D91BFD2A03E5FB002D0CFA /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91BFB2A03E5FB002D0CFA /* TitleCollectionViewCell.swift */; };
+		28D91BFE2A03E5FB002D0CFA /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D91BFC2A03E5FB002D0CFA /* TitleCollectionViewCell.xib */; };
+		28D91C002A03E84D002D0CFA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91BFF2A03E84D002D0CFA /* Item.swift */; };
+		28D91C022A03E890002D0CFA /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C012A03E890002D0CFA /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28B9601F2A03975C0026BF05 /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
+		28B960212A0397640026BF05 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		28B960232A0397670026BF05 /* AssetsImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsImages.swift; sourceTree = "<group>"; };
 		28C131262A03862B00623B49 /* SnareHelpDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnareHelpDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C131292A03862B00623B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C1312B2A03862B00623B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		28C1312D2A03862B00623B49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		28C131302A03862B00623B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28C1312D2A03862B00623B49 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		28C131302A03862B00623B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
 		28C131322A03862C00623B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28C131352A03862C00623B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28C131372A03862C00623B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C131422A03879600623B49 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		28D91BF72A03E5A4002D0CFA /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		28D91BF82A03E5A4002D0CFA /* CollectionViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewTableViewCell.xib; sourceTree = "<group>"; };
+		28D91BFB2A03E5FB002D0CFA /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		28D91BFC2A03E5FB002D0CFA /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		28D91BFF2A03E84D002D0CFA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		28D91C012A03E890002D0CFA /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		5137B55657B680BF53A42059 /* Pods-SnareHelpDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.debug.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FE271FCC15682B3812C6BD /* Pods_SnareHelpDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnareHelpDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC49892E0AF110D4BFBD50AA /* Pods-SnareHelpDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.release.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +61,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D91BF02A03A0DB002D0CFA /* SDWebImage in Frameworks */,
+				28D91BEA2A03A0A0002D0CFA /* RealmSwift in Frameworks */,
+				28D91BE82A03A0A0002D0CFA /* Realm in Frameworks */,
+				28D91BE52A03A074002D0CFA /* OpenAISwift in Frameworks */,
+				19C321E08DF312F1CD041BA1 /* Pods_SnareHelpDesk.framework in Frameworks */,
+				28D91BF22A03A0DB002D0CFA /* SDWebImageMapKit in Frameworks */,
+				28D91BED2A03A0C5002D0CFA /* MessageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +79,8 @@
 			children = (
 				28C131282A03862B00623B49 /* SnareHelpDesk */,
 				28C131272A03862B00623B49 /* Products */,
+				CF36C11A1EBE147D699E3BBA /* Pods */,
+				72FC2373A58933866E270886 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +95,90 @@
 		28C131282A03862B00623B49 /* SnareHelpDesk */ = {
 			isa = PBXGroup;
 			children = (
-				28C131292A03862B00623B49 /* AppDelegate.swift */,
-				28C1312B2A03862B00623B49 /* SceneDelegate.swift */,
-				28C1312D2A03862B00623B49 /* ViewController.swift */,
-				28C1312F2A03862B00623B49 /* Main.storyboard */,
+				28C131452A03930300623B49 /* CodeGenerated */,
+				28C131412A0386E500623B49 /* Manager */,
+				28C131402A0386BE00623B49 /* Resource */,
+				28C1313F2A0386BC00623B49 /* Controllers */,
+				28C1313E2A0386BA00623B49 /* View */,
+				28C1313D2A0386B700623B49 /* Model */,
 				28C131322A03862C00623B49 /* Assets.xcassets */,
 				28C131342A03862C00623B49 /* LaunchScreen.storyboard */,
 				28C131372A03862C00623B49 /* Info.plist */,
 			);
 			path = SnareHelpDesk;
+			sourceTree = "<group>";
+		};
+		28C1313D2A0386B700623B49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28D91BFF2A03E84D002D0CFA /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28C1313E2A0386BA00623B49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28D91BF72A03E5A4002D0CFA /* CollectionViewTableViewCell.swift */,
+				28D91BF82A03E5A4002D0CFA /* CollectionViewTableViewCell.xib */,
+				28D91BFB2A03E5FB002D0CFA /* TitleCollectionViewCell.swift */,
+				28D91BFC2A03E5FB002D0CFA /* TitleCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28C1313F2A0386BC00623B49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28C1312D2A03862B00623B49 /* HomeViewController.swift */,
+				28C1312F2A03862B00623B49 /* HomeViewController.storyboard */,
+				28C131422A03879600623B49 /* MainTabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		28C131402A0386BE00623B49 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				28C131292A03862B00623B49 /* AppDelegate.swift */,
+				28C1312B2A03862B00623B49 /* SceneDelegate.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		28C131412A0386E500623B49 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				28D91C012A03E890002D0CFA /* APICaller.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		28C131452A03930300623B49 /* CodeGenerated */ = {
+			isa = PBXGroup;
+			children = (
+				28B960232A0397670026BF05 /* AssetsImages.swift */,
+				28B960212A0397640026BF05 /* StoryboardScenes.swift */,
+				28B9601F2A03975C0026BF05 /* StoryboardSegues.swift */,
+			);
+			path = CodeGenerated;
+			sourceTree = "<group>";
+		};
+		72FC2373A58933866E270886 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0FE271FCC15682B3812C6BD /* Pods_SnareHelpDesk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF36C11A1EBE147D699E3BBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5137B55657B680BF53A42059 /* Pods-SnareHelpDesk.debug.xcconfig */,
+				FC49892E0AF110D4BFBD50AA /* Pods-SnareHelpDesk.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +188,25 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28C1313A2A03862C00623B49 /* Build configuration list for PBXNativeTarget "SnareHelpDesk" */;
 			buildPhases = (
+				6A69A139C6E63CE9DF494959 /* [CP] Check Pods Manifest.lock */,
 				28C131222A03862B00623B49 /* Sources */,
 				28C131232A03862B00623B49 /* Frameworks */,
 				28C131242A03862B00623B49 /* Resources */,
+				28C131442A03916700623B49 /* SwiftGen */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SnareHelpDesk;
+			packageProductDependencies = (
+				28D91BE42A03A074002D0CFA /* OpenAISwift */,
+				28D91BE72A03A0A0002D0CFA /* Realm */,
+				28D91BE92A03A0A0002D0CFA /* RealmSwift */,
+				28D91BEC2A03A0C5002D0CFA /* MessageKit */,
+				28D91BEF2A03A0DB002D0CFA /* SDWebImage */,
+				28D91BF12A03A0DB002D0CFA /* SDWebImageMapKit */,
+			);
 			productName = SnareHelpDesk;
 			productReference = 28C131262A03862B00623B49 /* SnareHelpDesk.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +235,12 @@
 				Base,
 			);
 			mainGroup = 28C1311D2A03862B00623B49;
+			packageReferences = (
+				28D91BE32A03A074002D0CFA /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				28D91BE62A03A0A0002D0CFA /* XCRemoteSwiftPackageReference "realm-swift" */,
+				28D91BEB2A03A0C5002D0CFA /* XCRemoteSwiftPackageReference "MessageKit" */,
+				28D91BEE2A03A0DB002D0CFA /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 28C131272A03862B00623B49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,34 +255,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D91BFE2A03E5FB002D0CFA /* TitleCollectionViewCell.xib in Resources */,
 				28C131362A03862C00623B49 /* LaunchScreen.storyboard in Resources */,
 				28C131332A03862C00623B49 /* Assets.xcassets in Resources */,
-				28C131312A03862B00623B49 /* Main.storyboard in Resources */,
+				28D91BFA2A03E5A4002D0CFA /* CollectionViewTableViewCell.xib in Resources */,
+				28C131312A03862B00623B49 /* HomeViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28C131442A03916700623B49 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftGen/bin/SwiftGen\"\n";
+		};
+		6A69A139C6E63CE9DF494959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnareHelpDesk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		28C131222A03862B00623B49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C1312E2A03862B00623B49 /* ViewController.swift in Sources */,
+				28D91C002A03E84D002D0CFA /* Item.swift in Sources */,
+				28C1312E2A03862B00623B49 /* HomeViewController.swift in Sources */,
+				28C131432A03879600623B49 /* MainTabBarViewController.swift in Sources */,
+				28D91BF92A03E5A4002D0CFA /* CollectionViewTableViewCell.swift in Sources */,
+				28B960202A03975C0026BF05 /* StoryboardSegues.swift in Sources */,
+				28B960242A0397670026BF05 /* AssetsImages.swift in Sources */,
 				28C1312A2A03862B00623B49 /* AppDelegate.swift in Sources */,
+				28D91BFD2A03E5FB002D0CFA /* TitleCollectionViewCell.swift in Sources */,
+				28D91C022A03E890002D0CFA /* APICaller.swift in Sources */,
 				28C1312C2A03862B00623B49 /* SceneDelegate.swift in Sources */,
+				28B960222A0397640026BF05 /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		28C1312F2A03862B00623B49 /* Main.storyboard */ = {
+		28C1312F2A03862B00623B49 /* HomeViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				28C131302A03862B00623B49 /* Base */,
 			);
-			name = Main.storyboard;
+			name = HomeViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		28C131342A03862C00623B49 /* LaunchScreen.storyboard */ = {
@@ -282,6 +466,7 @@
 		};
 		28C1313B2A03862C00623B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5137B55657B680BF53A42059 /* Pods-SnareHelpDesk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +476,6 @@
 				INFOPLIST_FILE = SnareHelpDesk/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +493,7 @@
 		};
 		28C1313C2A03862C00623B49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC49892E0AF110D4BFBD50AA /* Pods-SnareHelpDesk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,7 +503,6 @@
 				INFOPLIST_FILE = SnareHelpDesk/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +540,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28D91BE32A03A074002D0CFA /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		28D91BE62A03A0A0002D0CFA /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		28D91BEB2A03A0C5002D0CFA /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		28D91BEE2A03A0DB002D0CFA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28D91BE42A03A074002D0CFA /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28D91BE32A03A074002D0CFA /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		28D91BE72A03A0A0002D0CFA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28D91BE62A03A0A0002D0CFA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		28D91BE92A03A0A0002D0CFA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28D91BE62A03A0A0002D0CFA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		28D91BEC2A03A0C5002D0CFA /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28D91BEB2A03A0C5002D0CFA /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+		28D91BEF2A03A0DB002D0CFA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28D91BEE2A03A0DB002D0CFA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		28D91BF12A03A0DB002D0CFA /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28D91BEE2A03A0DB002D0CFA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28C1311E2A03862B00623B49 /* Project object */;
 }

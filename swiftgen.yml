@@ -1,0 +1,23 @@
+#strings:
+#  inputs: SnareHelpDesk/Localizable.strings
+#  outputs:
+#    - templateName: structured-swift5
+#      output: SnareHelpDesk/CodeGenerated/strings.swift
+xcassets:
+  inputs: SnareHelpDesk/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: SnareHelpDesk/CodeGenerated/AssetsImages.swift
+ib:
+  inputs: SnareHelpDesk/Controllers
+  outputs:
+    - templateName: scenes-swift5
+      output: SnareHelpDesk/CodeGenerated/StoryboardScenes.swift
+    - templateName: segues-swift5
+      output: SnareHelpDesk/CodeGenerated/StoryboardSegues.swift
+# colors:
+#   inputs: Color/180517.clr
+#   outputs:
+#     - templateName: swift5
+#       output: SnareHelpDesk/CodeGenerated/Colors.swift
+
