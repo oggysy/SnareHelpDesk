@@ -12,6 +12,7 @@ class ChatTableViewController: UIViewController {
 
     let realm = try! Realm()
     private var chatList: Results<ChatList>?
+    private var notificationToken: NotificationToken?
 
     @IBOutlet weak var chatListTableView: UITableView! {
         didSet{
@@ -25,6 +26,23 @@ class ChatTableViewController: UIViewController {
         chatListTableView.delegate = self
         navigationItem.title = "チャット履歴"
         loadChatList()
+        notificationToken = chatList?.observe { [weak self] (changes: RealmCollectionChange) in
+            guard let self = self else {
+                return
+            }
+            switch changes {
+            case .initial:
+                self.chatListTableView.reloadData()
+            case .update:
+                self.chatListTableView.reloadData()
+            case .error(let error):
+                fatalError("\(error)")
+            }
+        }
+    }
+
+    deinit {
+        notificationToken?.invalidate()
     }
 
 }
