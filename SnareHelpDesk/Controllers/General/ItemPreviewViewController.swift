@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import RealmSwift
 
 class ItemPreviewViewController: UIViewController {
 
@@ -14,6 +15,7 @@ class ItemPreviewViewController: UIViewController {
 
     @IBOutlet weak var previewWebView: WKWebView!
 
+    let realm = try! Realm()
     var model: Item?
     
     override func viewDidLoad() {
@@ -26,6 +28,29 @@ class ItemPreviewViewController: UIViewController {
         previewWebView.load(request)
     }
 
+
+
+    @IBAction func tapStaffButtonAction(_ sender: Any) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = StoryboardScene.ChatViewController.initialScene.instantiate()
+            let newChatList = ChatList()
+            newChatList.name = self?.model?.itemName ?? ""
+            newChatList.imageURL = self?.model?.mediumImageUrls.first?.imageUrl ?? ""
+            self?.save(chatList: newChatList)
+            vc.selectedChatList = newChatList
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+
+    private func save(chatList: ChatList) {
+        do {
+            try realm.write {
+                realm.add(chatList)
+            }
+        } catch {
+            print("Error feching data from context \(error)")
+        }
+    }
 }
 
 extension ItemPreviewViewController: WKNavigationDelegate {

@@ -15,12 +15,15 @@ class MainTabBarViewController: UITabBarController {
 
         let vc1 = UINavigationController(rootViewController: StoryboardScene.HomeViewController.initialScene.instantiate())
         let vc2 = UINavigationController(rootViewController: StoryboardScene.SearchViewController.initialScene.instantiate())
+        let vc3 = UINavigationController(rootViewController: StoryboardScene.ChatTableViewController.initialScene.instantiate())
 
         vc1.tabBarItem.image = UIImage(systemName: "house")
         vc2.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        vc3.tabBarItem.image = UIImage(systemName: "message")
 
         vc1.title = "Home"
         vc2.title = "Search"
+        vc3.title = "Chat"
 
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.backgroundColor = .systemCyan
@@ -31,18 +34,21 @@ class MainTabBarViewController: UITabBarController {
         let selectedAttributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor.white
         ]
-        let itemAppearance = UITabBarItemAppearance()
-        itemAppearance.normal.iconColor = .lightGray
-        itemAppearance.normal.titleTextAttributes = normalAttributes
-        itemAppearance.selected.iconColor = .white
-        itemAppearance.selected.titleTextAttributes = selectedAttributes
+        let itemAppearance = {
+            let appearance = UITabBarItemAppearance()
+            appearance.normal.iconColor = .lightGray
+            appearance.normal.titleTextAttributes = normalAttributes
+            appearance.selected.iconColor = .white
+            appearance.selected.titleTextAttributes = selectedAttributes
+            return appearance
+        }()
         tabBarAppearance.stackedLayoutAppearance = itemAppearance
         tabBarAppearance.inlineLayoutAppearance = itemAppearance
         tabBarAppearance.compactInlineLayoutAppearance = itemAppearance
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
 
-        setViewControllers([vc1,vc2], animated: true)
+        setViewControllers([vc1,vc2,vc3], animated: true)
     }
 
 

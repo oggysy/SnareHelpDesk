@@ -49,9 +49,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         let item = items[indexPath.row]
-
         cell.configure(with: item)
-
         return cell
     }
 

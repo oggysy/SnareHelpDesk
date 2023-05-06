@@ -6,24 +6,21 @@
 //
 
 import Foundation
-// MARK: - Result
+
 struct ResultItems :Codable{
     let Items: [ItemElement]
 }
 
-// MARK: - ItemElement
 struct ItemElement :Codable{
     let Item: Item
 }
 
-// MARK: - ItemItem
 struct Item :Codable{
     let mediumImageUrls: [ImageURL]
     let itemName: String
     let itemUrl: String
 }
 
-// MARK: - ImageURL
 struct ImageURL :Codable{
     let imageUrl: String
 }

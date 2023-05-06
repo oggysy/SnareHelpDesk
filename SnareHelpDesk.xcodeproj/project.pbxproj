@@ -36,6 +36,14 @@
 		28D91C0A2A03F171002D0CFA /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C082A03F171002D0CFA /* TitleTableViewCell.xib */; };
 		28D91C0E2A03F8C0002D0CFA /* ItemPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C0D2A03F8C0002D0CFA /* ItemPreviewViewController.swift */; };
 		28D91C102A03F8D4002D0CFA /* ItemPreviewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C0F2A03F8D4002D0CFA /* ItemPreviewViewController.storyboard */; };
+		28D91C122A052BDD002D0CFA /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C112A052BDD002D0CFA /* ChatTableViewController.swift */; };
+		28D91C142A052BF0002D0CFA /* ChatTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C132A052BF0002D0CFA /* ChatTableViewController.storyboard */; };
+		28D91C162A052CB4002D0CFA /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C152A052CB4002D0CFA /* ChatList.swift */; };
+		28D91C182A052CE9002D0CFA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C172A052CE9002D0CFA /* Message.swift */; };
+		28D91C1A2A05312F002D0CFA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C192A05312F002D0CFA /* ChatViewController.swift */; };
+		28D91C1C2A05313B002D0CFA /* ChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C1B2A05313B002D0CFA /* ChatViewController.storyboard */; };
+		28D91C1F2A05473D002D0CFA /* ChatTableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C1D2A05473D002D0CFA /* ChatTableViewTableViewCell.swift */; };
+		28D91C202A05473D002D0CFA /* ChatTableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +71,14 @@
 		28D91C082A03F171002D0CFA /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		28D91C0D2A03F8C0002D0CFA /* ItemPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPreviewViewController.swift; sourceTree = "<group>"; };
 		28D91C0F2A03F8D4002D0CFA /* ItemPreviewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemPreviewViewController.storyboard; sourceTree = "<group>"; };
+		28D91C112A052BDD002D0CFA /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		28D91C132A052BF0002D0CFA /* ChatTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatTableViewController.storyboard; sourceTree = "<group>"; };
+		28D91C152A052CB4002D0CFA /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		28D91C172A052CE9002D0CFA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		28D91C192A05312F002D0CFA /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		28D91C1B2A05313B002D0CFA /* ChatViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatViewController.storyboard; sourceTree = "<group>"; };
+		28D91C1D2A05473D002D0CFA /* ChatTableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewTableViewCell.swift; sourceTree = "<group>"; };
+		28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewTableViewCell.xib; sourceTree = "<group>"; };
 		5137B55657B680BF53A42059 /* Pods-SnareHelpDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.debug.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.debug.xcconfig"; sourceTree = "<group>"; };
 		F0FE271FCC15682B3812C6BD /* Pods_SnareHelpDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnareHelpDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC49892E0AF110D4BFBD50AA /* Pods-SnareHelpDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.release.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				28D91BFF2A03E84D002D0CFA /* Item.swift */,
+				28D91C152A052CB4002D0CFA /* ChatList.swift */,
+				28D91C172A052CE9002D0CFA /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,6 +155,8 @@
 				28D91BFC2A03E5FB002D0CFA /* TitleCollectionViewCell.xib */,
 				28D91C072A03F171002D0CFA /* TitleTableViewCell.swift */,
 				28D91C082A03F171002D0CFA /* TitleTableViewCell.xib */,
+				28D91C1D2A05473D002D0CFA /* ChatTableViewTableViewCell.swift */,
+				28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +202,8 @@
 			children = (
 				28D91C0D2A03F8C0002D0CFA /* ItemPreviewViewController.swift */,
 				28D91C0F2A03F8D4002D0CFA /* ItemPreviewViewController.storyboard */,
+				28D91C192A05312F002D0CFA /* ChatViewController.swift */,
+				28D91C1B2A05313B002D0CFA /* ChatViewController.storyboard */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -194,6 +216,8 @@
 				28C131422A03879600623B49 /* MainTabBarViewController.swift */,
 				28D91C032A03F0B0002D0CFA /* SearchViewController.swift */,
 				28D91C052A03F0C8002D0CFA /* SearchViewController.storyboard */,
+				28D91C112A052BDD002D0CFA /* ChatTableViewController.swift */,
+				28D91C132A052BF0002D0CFA /* ChatTableViewController.storyboard */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -294,8 +318,11 @@
 				28C131332A03862C00623B49 /* Assets.xcassets in Resources */,
 				28D91C102A03F8D4002D0CFA /* ItemPreviewViewController.storyboard in Resources */,
 				28D91BFA2A03E5A4002D0CFA /* CollectionViewTableViewCell.xib in Resources */,
+				28D91C1C2A05313B002D0CFA /* ChatViewController.storyboard in Resources */,
+				28D91C142A052BF0002D0CFA /* ChatTableViewController.storyboard in Resources */,
 				28D91C0A2A03F171002D0CFA /* TitleTableViewCell.xib in Resources */,
 				28C131312A03862B00623B49 /* HomeViewController.storyboard in Resources */,
+				28D91C202A05473D002D0CFA /* ChatTableViewTableViewCell.xib in Resources */,
 				28D91C062A03F0C8002D0CFA /* SearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,10 +381,13 @@
 				28D91C002A03E84D002D0CFA /* Item.swift in Sources */,
 				28C1312E2A03862B00623B49 /* HomeViewController.swift in Sources */,
 				28D91C092A03F171002D0CFA /* TitleTableViewCell.swift in Sources */,
+				28D91C182A052CE9002D0CFA /* Message.swift in Sources */,
 				28C131432A03879600623B49 /* MainTabBarViewController.swift in Sources */,
 				28D91BF92A03E5A4002D0CFA /* CollectionViewTableViewCell.swift in Sources */,
+				28D91C162A052CB4002D0CFA /* ChatList.swift in Sources */,
 				28B960202A03975C0026BF05 /* StoryboardSegues.swift in Sources */,
 				28B960242A0397670026BF05 /* AssetsImages.swift in Sources */,
+				28D91C1F2A05473D002D0CFA /* ChatTableViewTableViewCell.swift in Sources */,
 				28D91C042A03F0B0002D0CFA /* SearchViewController.swift in Sources */,
 				28C1312A2A03862B00623B49 /* AppDelegate.swift in Sources */,
 				28D91BFD2A03E5FB002D0CFA /* TitleCollectionViewCell.swift in Sources */,
@@ -365,6 +395,8 @@
 				28C1312C2A03862B00623B49 /* SceneDelegate.swift in Sources */,
 				28D91C0E2A03F8C0002D0CFA /* ItemPreviewViewController.swift in Sources */,
 				28B960222A0397640026BF05 /* StoryboardScenes.swift in Sources */,
+				28D91C1A2A05312F002D0CFA /* ChatViewController.swift in Sources */,
+				28D91C122A052BDD002D0CFA /* ChatTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

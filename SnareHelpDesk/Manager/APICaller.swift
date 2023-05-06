@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import OpenAISwift
 
 struct Constants {
     static let baseURL = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json"
@@ -55,5 +55,11 @@ class APICaller {
             }
         }
         task.resume()
+    }
+
+    func generatedAnswer(from chatMessages: [ChatMessage]) async throws -> String {
+        let openAI = OpenAISwift(authToken: "")
+        let result = try await openAI.sendChat(with: chatMessages)
+        return result.choices?.first?.message.content ?? ""
     }
 }

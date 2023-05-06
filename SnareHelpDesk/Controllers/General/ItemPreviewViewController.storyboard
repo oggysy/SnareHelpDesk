@@ -24,13 +24,36 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es4-Ap-mI2">
+                                <rect key="frame" x="273" y="698" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rVv-lX-IR6"/>
+                                    <constraint firstAttribute="height" constant="100" id="vc2-2Y-nND"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="tapStaffButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YIw-YF-nua"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="staff" translatesAutoresizingMaskIntoConstraints="NO" id="1aV-W1-Ug7">
+                                <rect key="frame" x="273" y="698" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="B4e-tA-hD3"/>
+                                    <constraint firstAttribute="width" constant="100" id="dt5-z3-18R"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Pc-Ku-rKA" secondAttribute="trailing" id="2WN-L7-Yfp"/>
                             <constraint firstItem="2Pc-Ku-rKA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="3pg-3E-jJI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="es4-Ap-mI2" secondAttribute="trailing" constant="20" id="BsN-CO-fF7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1aV-W1-Ug7" secondAttribute="bottom" constant="20" id="LRD-g4-Iud"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1aV-W1-Ug7" secondAttribute="trailing" constant="20" id="Q4z-g3-yJ7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2Pc-Ku-rKA" secondAttribute="bottom" id="Uam-8D-Mge"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="es4-Ap-mI2" secondAttribute="bottom" constant="20" id="nPh-P4-Mb8"/>
                             <constraint firstItem="2Pc-Ku-rKA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="nw3-s1-xSh"/>
                         </constraints>
                     </view>
@@ -44,6 +67,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="staff" width="231" height="231"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
