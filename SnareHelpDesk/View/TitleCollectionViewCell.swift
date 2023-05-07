@@ -12,7 +12,6 @@ class TitleCollectionViewCell: UICollectionViewCell {
 
     static let identifier = "TitleCollectionViewCell"
 
-
     @IBOutlet weak var itemImageView: UIImageView!
 
     public func configure(with urlString: String) {
@@ -21,5 +20,4 @@ class TitleCollectionViewCell: UICollectionViewCell {
         }
         itemImageView.sd_setImage(with: url, completed: nil)
     }
-
 }

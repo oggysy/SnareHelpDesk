@@ -10,13 +10,9 @@ import WebKit
 import RealmSwift
 
 class ItemPreviewViewController: UIViewController {
-
-
-
-    @IBOutlet weak var previewWebView: WKWebView!
-
-    let realm = try! Realm()
-    var model: Item?
+    @IBOutlet private weak var previewWebView: WKWebView!
+    private let realm = try! Realm()
+    public var model: Item?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +23,7 @@ class ItemPreviewViewController: UIViewController {
         let request = URLRequest(url: url!)
         previewWebView.load(request)
     }
-
-
-
+    
     @IBAction func tapStaffButtonAction(_ sender: Any) {
         DispatchQueue.main.async { [weak self] in
             let vc = StoryboardScene.ChatViewController.initialScene.instantiate()
@@ -41,7 +35,7 @@ class ItemPreviewViewController: UIViewController {
             self?.navigationController?.pushViewController(vc, animated: true)
         }
     }
-
+    
     private func save(chatList: ChatList) {
         do {
             try realm.write {
@@ -56,11 +50,10 @@ class ItemPreviewViewController: UIViewController {
 extension ItemPreviewViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.navigationType == .linkActivated {
-                // リンクがタップされた時、遷移をキャンセルする
-                decisionHandler(.cancel)
-            } else {
-                decisionHandler(.allow)
-            }
+            decisionHandler(.cancel)
+        } else {
+            decisionHandler(.allow)
+        }
     }
-
+    
 }

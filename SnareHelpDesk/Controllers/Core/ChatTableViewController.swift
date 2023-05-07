@@ -14,7 +14,7 @@ class ChatTableViewController: UIViewController {
     private var chatList: Results<ChatList>?
     private var notificationToken: NotificationToken?
 
-    @IBOutlet weak var chatListTableView: UITableView! {
+    @IBOutlet private weak var chatListTableView: UITableView! {
         didSet{
             chatListTableView.register(UINib(nibName: "ChatTableViewTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewTableViewCell")
         }
@@ -48,7 +48,6 @@ class ChatTableViewController: UIViewController {
 }
 
 extension ChatTableViewController: UITableViewDelegate, UITableViewDataSource {
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         chatList?.count ?? 1
     }
@@ -77,10 +76,8 @@ extension ChatTableViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension ChatTableViewController {
-
     private func loadChatList() {
         chatList = realm.objects(ChatList.self)
         chatListTableView.reloadData()
     }
-
 }

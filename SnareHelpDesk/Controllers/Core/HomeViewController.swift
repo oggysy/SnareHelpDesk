@@ -17,9 +17,9 @@ enum Sections: Int {
 
 class HomeViewController: UIViewController {
 
-    let sectionTitles: [String] = ["Yamaha", "Pearl", "Tama","DW","Ludwig"]
+    private let sectionTitles: [String] = ["Yamaha", "Pearl", "Tama","DW","Ludwig"]
 
-    @IBOutlet weak var homeTableView: UITableView!{
+    @IBOutlet private weak var homeTableView: UITableView!{
         didSet{
             homeTableView.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
         }
@@ -30,7 +30,6 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         homeTableView.delegate = self
         homeTableView.dataSource = self
-
     }
 }
 

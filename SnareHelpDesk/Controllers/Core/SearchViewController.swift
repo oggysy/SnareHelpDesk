@@ -11,7 +11,7 @@ class SearchViewController: UIViewController {
 
     private var items: [ItemElement] = [ItemElement]()
 
-    @IBOutlet weak var discoverTableView: UITableView! {
+    @IBOutlet private weak var discoverTableView: UITableView! {
         didSet{
             discoverTableView.register(UINib(nibName: "TitleTableViewCell", bundle: nil), forCellReuseIdentifier: "TitleTableViewCell")
         }
@@ -34,7 +34,6 @@ class SearchViewController: UIViewController {
         discoverTableView.delegate = self
         discoverTableView.dataSource = self
     }
-
 }
 
 
@@ -42,7 +41,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
-
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TitleTableViewCell", for: indexPath) as? TitleTableViewCell else {
@@ -64,7 +62,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension SearchViewController: UISearchResultsUpdating{
-
     func updateSearchResults(for searchController: UISearchController) {
         guard let query = searchController.searchBar.text else{return}
         APICaller.shared.getSearchSnare(with: query) { [weak self] result in
