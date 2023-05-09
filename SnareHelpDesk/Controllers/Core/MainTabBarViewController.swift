@@ -21,9 +21,9 @@ class MainTabBarViewController: UITabBarController {
         vc2.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         vc3.tabBarItem.image = UIImage(systemName: "message")
         
-        vc1.title = "Home"
-        vc2.title = "Search"
-        vc3.title = "Chat"
+        vc1.title = "ホーム"
+        vc2.title = "検索"
+        vc3.title = "チャット"
         
         
         let normalAttributes: [NSAttributedString.Key: Any] = [
