@@ -19,7 +19,7 @@ class SearchViewController: UIViewController {
 
     private let searchController: UISearchController = {
         let sb = UISearchController()
-        sb.searchBar.placeholder = "Enter the Snare name"
+        sb.searchBar.placeholder = "メーカー名やスネア名を入力してください"
         sb.searchBar.searchBarStyle = .minimal
         return sb
     }()
