@@ -57,10 +57,8 @@ extension CollectionViewTableViewCell :UICollectionViewDelegate, UICollectionVie
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TitleCollectionViewCell", for: indexPath) as? TitleCollectionViewCell else {
             return UICollectionViewCell()
         }
-        guard let urlString = items[indexPath.row].Item.mediumImageUrls.first?.imageUrl else {
-            return UICollectionViewCell()
-        }
-        cell.configure(with: urlString)
+        let item = items[indexPath.row].Item
+        cell.configure(with: item)
         return cell
     }
     

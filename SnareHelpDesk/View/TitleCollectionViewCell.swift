@@ -13,11 +13,15 @@ class TitleCollectionViewCell: UICollectionViewCell {
     static let identifier = "TitleCollectionViewCell"
 
     @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var itemNameLabel: UILabel!
 
-    public func configure(with urlString: String) {
-        guard let url = URL(string: urlString) else {
+
+
+    public func configure(with item: Item) {
+        guard let urlString = item.mediumImageUrls.first?.imageUrl, let url = URL(string: urlString) else {
             return
         }
         itemImageView.sd_setImage(with: url, completed: nil)
+        itemNameLabel.text = item.itemName
     }
 }
