@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Res-vt-x3T">
-                        <rect key="frame" x="0.0" y="0.0" width="422" height="99"/>
+                        <rect key="frame" x="20" y="0.0" width="382" height="99"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JDE-r3-XP3">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="99"/>
@@ -28,7 +28,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dl-nv-J9m">
-                                <rect key="frame" x="115" y="39.333333333333336" width="307" height="20.333333333333336"/>
+                                <rect key="frame" x="115" y="39.333333333333336" width="267" height="20.333333333333336"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,9 +38,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Res-vt-x3T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dvx-7U-vTr"/>
-                    <constraint firstItem="Res-vt-x3T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dkU-SA-rES"/>
+                    <constraint firstItem="Res-vt-x3T" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dkU-SA-rES"/>
                     <constraint firstAttribute="bottom" secondItem="Res-vt-x3T" secondAttribute="bottom" id="jip-Nl-E6l"/>
-                    <constraint firstAttribute="trailing" secondItem="Res-vt-x3T" secondAttribute="trailing" id="pcI-zI-YG8"/>
+                    <constraint firstAttribute="trailing" secondItem="Res-vt-x3T" secondAttribute="trailing" constant="20" id="pcI-zI-YG8"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
