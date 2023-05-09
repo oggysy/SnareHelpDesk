@@ -18,7 +18,7 @@ class SearchViewController: UIViewController {
     }
 
     private let searchController: UISearchController = {
-        let sb = UISearchController()
+        let sb = UISearchController(searchResultsController: nil)
         sb.searchBar.placeholder = "メーカー名やスネア名を入力してください"
         sb.searchBar.searchBarStyle = .minimal
         return sb
@@ -26,10 +26,9 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         navigationItem.title  = "検索"
         view.backgroundColor = .systemBackground
-        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
         discoverTableView.delegate = self
         discoverTableView.dataSource = self
@@ -61,9 +60,9 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension SearchViewController: UISearchResultsUpdating{
-    func updateSearchResults(for searchController: UISearchController) {
-        guard let query = searchController.searchBar.text else{return}
+extension SearchViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let query = searchBar.text else{return}
         APICaller.shared.getSearchSnare(with: query) { [weak self] result in
             switch result {
             case .success(let items):
@@ -76,5 +75,4 @@ extension SearchViewController: UISearchResultsUpdating{
             }
         }
     }
-
 }
