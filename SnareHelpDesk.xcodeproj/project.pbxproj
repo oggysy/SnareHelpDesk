@@ -15,6 +15,7 @@
 		28C1312C2A03862B00623B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1312B2A03862B00623B49 /* SceneDelegate.swift */; };
 		28C1312E2A03862B00623B49 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1312D2A03862B00623B49 /* HomeViewController.swift */; };
 		28C131312A03862B00623B49 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C1312F2A03862B00623B49 /* HomeViewController.storyboard */; };
+		28C131332A03862C00623B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C131322A03862C00623B49 /* Assets.xcassets */; };
 		28C131362A03862C00623B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C131342A03862C00623B49 /* LaunchScreen.storyboard */; };
 		28C131432A03879600623B49 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C131422A03879600623B49 /* MainTabBarViewController.swift */; };
 		28D91BE52A03A074002D0CFA /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 28D91BE42A03A074002D0CFA /* OpenAISwift */; };
@@ -43,7 +44,6 @@
 		28D91C1C2A05313B002D0CFA /* ChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C1B2A05313B002D0CFA /* ChatViewController.storyboard */; };
 		28D91C1F2A05473D002D0CFA /* ChatTableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C1D2A05473D002D0CFA /* ChatTableViewTableViewCell.swift */; };
 		28D91C202A05473D002D0CFA /* ChatTableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */; };
-		28FFCBC72A0D19DC00781136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28FFCBC62A0D19DC00781136 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +55,7 @@
 		28C1312B2A03862B00623B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		28C1312D2A03862B00623B49 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		28C131302A03862B00623B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
+		28C131322A03862C00623B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28C131352A03862C00623B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28C131372A03862C00623B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28C131422A03879600623B49 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		28D91C1B2A05313B002D0CFA /* ChatViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatViewController.storyboard; sourceTree = "<group>"; };
 		28D91C1D2A05473D002D0CFA /* ChatTableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewTableViewCell.swift; sourceTree = "<group>"; };
 		28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewTableViewCell.xib; sourceTree = "<group>"; };
-		28FFCBC62A0D19DC00781136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5137B55657B680BF53A42059 /* Pods-SnareHelpDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.debug.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.debug.xcconfig"; sourceTree = "<group>"; };
 		F0FE271FCC15682B3812C6BD /* Pods_SnareHelpDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnareHelpDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC49892E0AF110D4BFBD50AA /* Pods-SnareHelpDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.release.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 				28C1313F2A0386BC00623B49 /* Controllers */,
 				28C1313E2A0386BA00623B49 /* View */,
 				28C1313D2A0386B700623B49 /* Model */,
+				28C131322A03862C00623B49 /* Assets.xcassets */,
 				28C131342A03862C00623B49 /* LaunchScreen.storyboard */,
-				28FFCBC62A0D19DC00781136 /* Assets.xcassets */,
 				28C131372A03862C00623B49 /* Info.plist */,
 			);
 			path = SnareHelpDesk;
@@ -315,7 +315,7 @@
 			files = (
 				28D91BFE2A03E5FB002D0CFA /* TitleCollectionViewCell.xib in Resources */,
 				28C131362A03862C00623B49 /* LaunchScreen.storyboard in Resources */,
-				28FFCBC72A0D19DC00781136 /* Assets.xcassets in Resources */,
+				28C131332A03862C00623B49 /* Assets.xcassets in Resources */,
 				28D91C102A03F8D4002D0CFA /* ItemPreviewViewController.storyboard in Resources */,
 				28D91BFA2A03E5A4002D0CFA /* CollectionViewTableViewCell.xib in Resources */,
 				28D91C1C2A05313B002D0CFA /* ChatViewController.storyboard in Resources */,
