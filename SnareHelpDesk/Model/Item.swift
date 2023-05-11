@@ -18,6 +18,7 @@ struct ItemElement :Codable{
 struct Item :Codable{
     let mediumImageUrls: [ImageURL]
     let itemName: String
+    let itemCaption: String
     let itemUrl: String
 }
 

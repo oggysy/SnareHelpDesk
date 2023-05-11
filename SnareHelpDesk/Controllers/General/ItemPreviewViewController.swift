@@ -6,22 +6,26 @@
 //
 
 import UIKit
-import WebKit
+import SDWebImage
 import RealmSwift
 
 class ItemPreviewViewController: UIViewController {
-    @IBOutlet private weak var previewWebView: WKWebView!
     private let realm = try! Realm()
     public var model: Item?
+
+
+    @IBOutlet weak var itemDetailImageView: UIImageView!
+    @IBOutlet weak var itemDetailNameLabel: UILabel!
+    @IBOutlet weak var itemCaptionLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.viewDidLoad()
-        previewWebView.navigationDelegate = self
         guard let model = model else { return }
-        let url = URL(string: model.itemUrl)
-        let request = URLRequest(url: url!)
-        previewWebView.load(request)
+        itemDetailNameLabel.text = model.itemName
+        itemCaptionLabel.text = model.itemCaption
+        guard let resizeUrl = model.mediumImageUrls.first?.imageUrl.replacingOccurrences(of: "_ex=128x128", with: "_ex=300x300") ,let url = URL(string: resizeUrl) else { return }
+        itemDetailImageView.sd_setImage(with: url, completed: nil)
     }
     
     @IBAction func tapStaffButtonAction(_ sender: Any) {
@@ -47,13 +51,4 @@ class ItemPreviewViewController: UIViewController {
     }
 }
 
-extension ItemPreviewViewController: WKNavigationDelegate {
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        if navigationAction.navigationType == .linkActivated {
-            decisionHandler(.cancel)
-        } else {
-            decisionHandler(.allow)
-        }
-    }
-    
-}
+
