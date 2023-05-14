@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 protocol CollectionViewTableViewCellDelegate: AnyObject {
     func collectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, model: Item)
@@ -13,8 +14,10 @@ protocol CollectionViewTableViewCellDelegate: AnyObject {
 
 class CollectionViewTableViewCell: UITableViewCell {
     
-    
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+
     @IBOutlet weak var collectionView: UICollectionView!
+
     
     static let identifier = "CollectionViewTableViewCell"
     private var items: [ItemElement] = [ItemElement]()
@@ -38,6 +41,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     public func configure(with items: [ItemElement]) {
         self.items = items
         DispatchQueue.main.async { [weak self] in
+            self?.activityIndicatorView.stopAnimating()
             self?.collectionView.reloadData()
         }
     }

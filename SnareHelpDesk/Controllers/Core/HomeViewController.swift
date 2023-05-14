@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 enum Sections: Int {
     case Yamaha = 0
@@ -47,9 +48,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionViewTableViewCell", for: indexPath) as? CollectionViewTableViewCell else {
             return UITableViewCell()
         }
-
+        cell.activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            cell.activityIndicatorView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            cell.activityIndicatorView.centerYAnchor.constraint(equalTo: cell.centerYAnchor)
+        ])
         cell.delegate = self
-
+        cell.activityIndicatorView.startAnimating()
         switch indexPath.section {
         case Sections.Yamaha.rawValue:
             APICaller.shared.getSnare(with: "Yamaha"){ result in
