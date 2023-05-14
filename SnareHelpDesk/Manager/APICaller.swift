@@ -12,7 +12,7 @@ struct Constants {
     static let baseURL = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json"
     static let keyWord = "keyword=%E3%82%B9%E3%83%8D%E3%82%A2%E3%83%89%E3%83%A9%E3%83%A0%E3%80%80"
     static let shopCode = "shopCode=ikebe"
-    static let APIKey = "applicationId=1094381194134200287"
+    static let APIKey = "applicationId="
 }
 
 enum APIError: Error {
