@@ -12,9 +12,8 @@ struct Constants {
     static let baseURL = "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?format=json"
     static let keyWord = "keyword=%E3%82%B9%E3%83%8D%E3%82%A2%E3%83%89%E3%83%A9%E3%83%A0%E3%80%80"
     static let shopCode = "shopCode=ikebe"
-    static let APIKey = "applicationId="
+    static let APIKey = "applicationId=1094381194134200287"
 }
-
 
 enum APIError: Error {
     case failedTogetData
@@ -33,13 +32,17 @@ class APICaller {
         let operation = SnareRequestOperation(maker: maker, completion: completion)
         apiQueue.addOperation(operation)
         apiQueue.addOperation(BlockOperation(block: { [weak self] in
-            guard let self = self else { return }
+            guard let self = self else {
+                return
+            }
             Thread.sleep(forTimeInterval: self.requestInterval)
         }))
     }
 
-    func getSearchSnare(with word: String, completion: @escaping (Result<[ItemElement], Error>) -> Void){
-        guard let url = URL(string: "\(Constants.baseURL)&\(Constants.keyWord)\(word)&\(Constants.shopCode)&\(Constants.APIKey)") else {return}
+    func getSearchSnare(with word: String, completion: @escaping (Result<[ItemElement], Error>) -> Void) {
+        guard let url = URL(string: "\(Constants.baseURL)&\(Constants.keyWord)\(word)&\(Constants.shopCode)&\(Constants.APIKey)") else {
+            return
+        }
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
             guard let data = data, error == nil else {
                 return
@@ -72,8 +75,12 @@ class SnareRequestOperation: Operation {
     }
 
     override func main() {
-        guard !isCancelled else { return }
-        guard let url = URL(string: "\(Constants.baseURL)&\(Constants.keyWord)\(maker)&\(Constants.shopCode)&\(Constants.APIKey)") else { return }
+        guard !isCancelled else {
+            return
+        }
+        guard let url = URL(string: "\(Constants.baseURL)&\(Constants.keyWord)\(maker)&\(Constants.shopCode)&\(Constants.APIKey)") else {
+            return
+        }
 
         let semaphore = DispatchSemaphore(value: 0)
 

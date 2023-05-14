@@ -12,7 +12,7 @@ class SearchViewController: UIViewController {
     private var items: [ItemElement] = [ItemElement]()
 
     @IBOutlet private weak var discoverTableView: UITableView! {
-        didSet{
+        didSet {
             discoverTableView.register(UINib(nibName: "TitleTableViewCell", bundle: nil), forCellReuseIdentifier: "TitleTableViewCell")
         }
     }
@@ -26,7 +26,7 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title  = "検索"
+        navigationItem.title = "検索"
         view.backgroundColor = .systemBackground
         searchController.searchBar.delegate = self
         navigationItem.searchController = searchController
@@ -34,7 +34,6 @@ class SearchViewController: UIViewController {
         discoverTableView.dataSource = self
     }
 }
-
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -60,9 +59,11 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension SearchViewController: UISearchBarDelegate{
+extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let query = searchBar.text else{return}
+        guard let query = searchBar.text else {
+            return
+        }
         APICaller.shared.getSearchSnare(with: query) { [weak self] result in
             switch result {
             case .success(let items):

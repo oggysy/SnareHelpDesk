@@ -11,9 +11,11 @@ import RealmSwift
 class ItemPreviewViewController: UIViewController {
     private let realm = try! Realm()
     public var model: Item?
-    public var imageURL:[String] {
-        guard let model = model else { return [String]() }
-        return model.mediumImageUrls.map{ $0.imageUrl.replacingOccurrences(of: "_ex=128x128", with: "_ex=300x300") }
+    public var imageURL: [String] {
+        guard let model = model else {
+            return [String]()
+        }
+        return model.mediumImageUrls.map { $0.imageUrl.replacingOccurrences(of: "_ex=128x128", with: "_ex=300x300") }
     }
 
     @IBOutlet weak var itemImageCollectionView: UICollectionView! {
@@ -32,10 +34,11 @@ class ItemPreviewViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let model = model else { return }
+        guard let model = model else {
+            return
+        }
         itemNameLabel.text = model.itemName
         shopNameLabel.text = "ショップ名:\(model.shopName)"
         priceLabel.text = "価格:\(String(model.itemPriceMin3))円"
@@ -46,7 +49,7 @@ class ItemPreviewViewController: UIViewController {
         self.updateLayout()
 
     }
-    
+
     @IBAction func tapStaffButtonAction(_ sender: Any) {
         DispatchQueue.main.async { [weak self] in
             let vc = StoryboardScene.ChatViewController.initialScene.instantiate()
@@ -58,7 +61,7 @@ class ItemPreviewViewController: UIViewController {
             self?.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
+
     private func save(chatList: ChatList) {
         do {
             try realm.write {
@@ -85,13 +88,15 @@ class ItemPreviewViewController: UIViewController {
     }
 }
 
-extension ItemPreviewViewController: UICollectionViewDelegate,UICollectionViewDataSource{
+extension ItemPreviewViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         imageURL.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemImageCollectionViewCell", for: indexPath) as? ItemImageCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemImageCollectionViewCell", for: indexPath) as? ItemImageCollectionViewCell else {
+            return UICollectionViewCell()
+        }
         cell.configure(with: imageURL[indexPath.row])
         return cell
     }
@@ -99,7 +104,9 @@ extension ItemPreviewViewController: UICollectionViewDelegate,UICollectionViewDa
 
 final class CarouselCollectionViewFlowLayout: UICollectionViewFlowLayout {
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
-        guard let collectionView = collectionView else { return .zero }
+        guard let collectionView = collectionView else {
+            return .zero
+        }
         let pageWidth = itemSize.width + minimumLineSpacing
         let currentPage = collectionView.contentOffset.x / pageWidth
 
@@ -111,4 +118,3 @@ final class CarouselCollectionViewFlowLayout: UICollectionViewFlowLayout {
         }
     }
 }
-

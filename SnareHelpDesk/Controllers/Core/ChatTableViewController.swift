@@ -15,7 +15,7 @@ class ChatTableViewController: UIViewController {
     private var notificationToken: NotificationToken?
 
     @IBOutlet private weak var chatListTableView: UITableView! {
-        didSet{
+        didSet {
             chatListTableView.register(UINib(nibName: "ChatTableViewTableViewCell", bundle: nil), forCellReuseIdentifier: "ChatTableViewTableViewCell")
         }
     }
@@ -53,7 +53,7 @@ extension ChatTableViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewTableViewCell", for: indexPath) as? ChatTableViewTableViewCell ,let chatList = chatList?[indexPath.row] else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ChatTableViewTableViewCell", for: indexPath) as? ChatTableViewTableViewCell, let chatList = chatList?[indexPath.row] else {
             return UITableViewCell()
         }
         cell.configure(with: chatList)
@@ -71,8 +71,6 @@ extension ChatTableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
-
-    
 }
 
 extension ChatTableViewController {

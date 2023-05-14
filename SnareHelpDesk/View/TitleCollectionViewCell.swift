@@ -15,8 +15,6 @@ class TitleCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var itemNameLabel: UILabel!
 
-
-
     public func configure(with item: Item) {
         guard let urlString = item.mediumImageUrls.first?.imageUrl, let url = URL(string: urlString) else {
             return

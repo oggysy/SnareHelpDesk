@@ -10,8 +10,7 @@ import SDWebImage
 
 class ItemImageCollectionViewCell: UICollectionViewCell {
 
-
-    @IBOutlet weak var ItemCellImageView: UIImageView!
+    @IBOutlet weak var itemCellImageView: UIImageView!
 
     static let widthInset: CGFloat = 20.0
     static let cellWidth: CGFloat = 300
@@ -21,14 +20,11 @@ class ItemImageCollectionViewCell: UICollectionViewCell {
         guard let url = URL(string: itemImageURL) else {
             return
         }
-        ItemCellImageView.sd_setImage(with: url)
+        itemCellImageView.sd_setImage(with: url)
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    
-
 }
