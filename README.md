@@ -8,7 +8,7 @@
 ## 環境構築
 1. リポジトリをclone
 　　git clone https://github.com/oggysy/SnareHelpDesk.git
-1. cocoapodsをインストール
+2. cocoapodsをインストール
 　　sudo gem install cocoapods
 3. cocoapodsをセットアップ
 　　pod setup
@@ -28,14 +28,14 @@
 | Realm | 10.39.0 |
 
 ## 使用ライブラリ
-・MessageKit
-チャット画面のUIを作成するライブラリ
-・OpenAISwift
-ChatGPTAPIを利用するためのライブラリ
-・RealmSwift
-データをローカルに保存するためのデータベースライブラリ
-・SDWebImage
-URLから画像を挿入するためのライブラリ
+・MessageKit<br>
+チャット画面のUIを作成するライブラリ<br>
+・OpenAISwift<br>
+ChatGPTAPIを利用するためのライブラリ<br>
+・RealmSwift<br>
+データをローカルに保存するためのデータベースライブラリ<br>
+・SDWebImage<br>
+URLから画像を挿入するためのライブラリ<br>
 ## バージョン管理
 GitHubを使用
 ## デザインパターン
