@@ -7,20 +7,23 @@
 
 import Foundation
 
-struct ResultItems :Codable{
+struct ResultItems: Codable {
     let Items: [ItemElement]
 }
 
-struct ItemElement :Codable{
+struct ItemElement: Codable {
     let Item: Item
 }
 
-struct Item :Codable{
+struct Item: Codable {
     let mediumImageUrls: [ImageURL]
     let itemName: String
     let itemUrl: String
+    let itemCaption: String
+    let itemPriceMin3: Int
+    let shopName: String
 }
 
-struct ImageURL :Codable{
+struct ImageURL: Codable {
     let imageUrl: String
 }

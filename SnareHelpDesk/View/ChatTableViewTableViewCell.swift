@@ -9,13 +9,11 @@ import UIKit
 
 class ChatTableViewTableViewCell: UITableViewCell {
 
-
     @IBOutlet weak var chatIconImageView: UIImageView!
     @IBOutlet weak var chatTitleLabel: UILabel!
     @IBOutlet weak var chatCurrentMessageLabel: UILabel!
 
-
-    func configure(with chatList:ChatList) {
+    func configure(with chatList: ChatList) {
         chatTitleLabel.text = chatList.name
         chatCurrentMessageLabel.text = chatList.chatHistory.last?.textContent
         guard let url = URL(string: chatList.imageURL) else {

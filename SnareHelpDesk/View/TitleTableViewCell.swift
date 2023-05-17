@@ -9,12 +9,10 @@ import UIKit
 
 class TitleTableViewCell: UITableViewCell {
 
-
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var itemLabel: UILabel!
 
-
-    func configure(with item:ItemElement) {
+    func configure(with item: ItemElement) {
         itemLabel.text = item.Item.itemName
         guard let url = URL(string: item.Item.mediumImageUrls.first?.imageUrl ?? "") else {
             return
@@ -32,5 +30,4 @@ class TitleTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

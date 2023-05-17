@@ -44,6 +44,8 @@
 		28D91C1C2A05313B002D0CFA /* ChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C1B2A05313B002D0CFA /* ChatViewController.storyboard */; };
 		28D91C1F2A05473D002D0CFA /* ChatTableViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D91C1D2A05473D002D0CFA /* ChatTableViewTableViewCell.swift */; };
 		28D91C202A05473D002D0CFA /* ChatTableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */; };
+		28FFCBCA2A0D310400781136 /* ItemImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCBC82A0D310400781136 /* ItemImageCollectionViewCell.swift */; };
+		28FFCBCB2A0D310400781136 /* ItemImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FFCBC92A0D310400781136 /* ItemImageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		28D91C1B2A05313B002D0CFA /* ChatViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatViewController.storyboard; sourceTree = "<group>"; };
 		28D91C1D2A05473D002D0CFA /* ChatTableViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewTableViewCell.swift; sourceTree = "<group>"; };
 		28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewTableViewCell.xib; sourceTree = "<group>"; };
+		28FFCBC82A0D310400781136 /* ItemImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		28FFCBC92A0D310400781136 /* ItemImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		5137B55657B680BF53A42059 /* Pods-SnareHelpDesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.debug.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.debug.xcconfig"; sourceTree = "<group>"; };
 		F0FE271FCC15682B3812C6BD /* Pods_SnareHelpDesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnareHelpDesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC49892E0AF110D4BFBD50AA /* Pods-SnareHelpDesk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnareHelpDesk.release.xcconfig"; path = "Target Support Files/Pods-SnareHelpDesk/Pods-SnareHelpDesk.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				28D91C082A03F171002D0CFA /* TitleTableViewCell.xib */,
 				28D91C1D2A05473D002D0CFA /* ChatTableViewTableViewCell.swift */,
 				28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */,
+				28FFCBC82A0D310400781136 /* ItemImageCollectionViewCell.swift */,
+				28FFCBC92A0D310400781136 /* ItemImageCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 				28C131232A03862B00623B49 /* Frameworks */,
 				28C131242A03862B00623B49 /* Resources */,
 				28C131442A03916700623B49 /* SwiftGen */,
+				282DC3EE2A111C520072B459 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -314,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28D91BFE2A03E5FB002D0CFA /* TitleCollectionViewCell.xib in Resources */,
+				28FFCBCB2A0D310400781136 /* ItemImageCollectionViewCell.xib in Resources */,
 				28C131362A03862C00623B49 /* LaunchScreen.storyboard in Resources */,
 				28C131332A03862C00623B49 /* Assets.xcassets in Resources */,
 				28D91C102A03F8D4002D0CFA /* ItemPreviewViewController.storyboard in Resources */,
@@ -330,6 +338,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		282DC3EE2A111C520072B459 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		28C131442A03916700623B49 /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -381,6 +408,7 @@
 				28D91C002A03E84D002D0CFA /* Item.swift in Sources */,
 				28C1312E2A03862B00623B49 /* HomeViewController.swift in Sources */,
 				28D91C092A03F171002D0CFA /* TitleTableViewCell.swift in Sources */,
+				28FFCBCA2A0D310400781136 /* ItemImageCollectionViewCell.swift in Sources */,
 				28D91C182A052CE9002D0CFA /* Message.swift in Sources */,
 				28C131432A03879600623B49 /* MainTabBarViewController.swift in Sources */,
 				28D91BF92A03E5A4002D0CFA /* CollectionViewTableViewCell.swift in Sources */,
@@ -472,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -526,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
