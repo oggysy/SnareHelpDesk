@@ -6,7 +6,7 @@
 スネアを検索し、気になるスネアがあればチャットで質問すると、すぐに回答が得られる<br>
 <br>
 <br>
-![SnareHelpDesk説明](https://github.com/oggysy/SnareHelpDesk/assets/93628118/60056130-1fd3-4c37-8dfd-9a8404a6d700)
+![SnareHelpDesk](https://github.com/oggysy/SnareHelpDesk/assets/93628118/12e67773-ec6b-4462-b45a-99be5f5ea559)
 
 
 ## 環境構築
