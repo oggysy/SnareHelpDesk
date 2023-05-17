@@ -4,6 +4,8 @@
 ## 概要
 いつでもスネアについての相談ができるチャット機能付きスネアドラム検索アプリ<br>
 スネアを検索し、気になるスネアがあればチャットで質問すると、すぐに回答が得られる<br>
+<br>
+<br>
 ![SnareHelpDesk説明](https://github.com/oggysy/SnareHelpDesk/assets/93628118/60056130-1fd3-4c37-8dfd-9a8404a6d700)
 
 
