@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SkeletonView
 
 protocol CollectionViewTableViewCellDelegate: AnyObject {
     func collectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, model: Item)

@@ -46,7 +46,6 @@
 		28D91C202A05473D002D0CFA /* ChatTableViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D91C1E2A05473D002D0CFA /* ChatTableViewTableViewCell.xib */; };
 		28FFCBCA2A0D310400781136 /* ItemImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFCBC82A0D310400781136 /* ItemImageCollectionViewCell.swift */; };
 		28FFCBCB2A0D310400781136 /* ItemImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FFCBC92A0D310400781136 /* ItemImageCollectionViewCell.xib */; };
-		28FFCBCE2A0FCDCA00781136 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 28FFCBCD2A0FCDCA00781136 /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +97,6 @@
 				28D91BEA2A03A0A0002D0CFA /* RealmSwift in Frameworks */,
 				28D91BE82A03A0A0002D0CFA /* Realm in Frameworks */,
 				28D91BE52A03A074002D0CFA /* OpenAISwift in Frameworks */,
-				28FFCBCE2A0FCDCA00781136 /* SkeletonView in Frameworks */,
 				19C321E08DF312F1CD041BA1 /* Pods_SnareHelpDesk.framework in Frameworks */,
 				28D91BF22A03A0DB002D0CFA /* SDWebImageMapKit in Frameworks */,
 				28D91BED2A03A0C5002D0CFA /* MessageKit in Frameworks */,
@@ -273,7 +271,6 @@
 				28D91BEC2A03A0C5002D0CFA /* MessageKit */,
 				28D91BEF2A03A0DB002D0CFA /* SDWebImage */,
 				28D91BF12A03A0DB002D0CFA /* SDWebImageMapKit */,
-				28FFCBCD2A0FCDCA00781136 /* SkeletonView */,
 			);
 			productName = SnareHelpDesk;
 			productReference = 28C131262A03862B00623B49 /* SnareHelpDesk.app */;
@@ -308,7 +305,6 @@
 				28D91BE62A03A0A0002D0CFA /* XCRemoteSwiftPackageReference "realm-swift" */,
 				28D91BEB2A03A0C5002D0CFA /* XCRemoteSwiftPackageReference "MessageKit" */,
 				28D91BEE2A03A0DB002D0CFA /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				28FFCBCC2A0FCDCA00781136 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = 28C131272A03862B00623B49 /* Products */;
 			projectDirPath = "";
@@ -682,14 +678,6 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		28FFCBCC2A0FCDCA00781136 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -722,11 +710,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 28D91BEE2A03A0DB002D0CFA /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
-		};
-		28FFCBCD2A0FCDCA00781136 /* SkeletonView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28FFCBCC2A0FCDCA00781136 /* XCRemoteSwiftPackageReference "SkeletonView" */;
-			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
